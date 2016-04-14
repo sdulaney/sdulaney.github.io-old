@@ -1,0 +1,33 @@
+/* Tooltip */
+.tooltip > .tooltip-inner {
+    background-color: transparent; 
+    color: white;
+}
+
+.tooltip.bottom > .tooltip-arrow {
+    border-bottom-color: white;
+}
+
+.header {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../img/IMG_8260.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.fa-linkedin, .fa-github, .fa-facebook, .fa-instagram, .fa-twitter, .fa-envelope {
+    color: #C0C0C0;
+}
+
+.text-vertical-center h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 4.5em;
+    font-weight: 700;
+    color: #FFFFFF;
+}
