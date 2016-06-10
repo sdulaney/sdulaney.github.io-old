@@ -2,11 +2,6 @@
 <html lang="en">
 
 <head>
-	<script type="text/javascript">
-    	var host = "yoursite.com";
-    	if ((host == window.location.host) && (window.location.protocol != "https:"))
-        	window.location.protocol = "https";
-	</script>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,178 +9,496 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <link rel="canonical" href="https://www.stewartdulaney.com" />
+    <link rel="icon" type="image/png" href="img/cafb6682-00ed-4310-8a47-11433fe55f8d.png" />
 
-    <link rel="icon" type="image/png" href="img/icon.png" />
-
-    <title>Stewart Dulaney</title>
+    <title>3827 Tilden Ave</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- CSS -->
-    <link href="css/stylish-portfolio.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/full-slider.css" rel="stylesheet">
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
 
-    <!-- Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet">
 
-    <!--Google analytics-->
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open%20Sans:400,300,700' rel='stylesheet' type='text/css'>
 
-		ga('create', 'UA-76143550-1', 'auto');
-		ga('send', 'pageview');
-	</script>
-</head>
-
-<body>
-
-    <!-- Navigation -->
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-    <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand">
-                <a href="#top"  onclick = $("#menu-close").click(); >Stewart Dulaney</a>
-            </li>
-            <li>
-                <a href="#top" onclick = $("#menu-close").click(); >Home</a>
-            </li>
-            <li>
-                <a href="#portfolio" onclick = $("#menu-close").click(); >Portfolio</a>
-            </li>
-        </ul>
-    </nav>
-
-    <!-- Header -->
-    <header id="top" class="header">
-        <div class="text-vertical-center">
-            <h1>Stewart Dulaney</h1>
-            <br>
-            <ul class="list-inline">
-                <li>
-                    <a href="https://www.linkedin.com/in/stewartdulaney" data-toggle="tooltip" data-placement="bottom" title="LinkedIn" target="_blank"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
-                </li>
-                <li>
-                    <a href="https://github.com/sdulaney" data-toggle="tooltip" data-placement="bottom" title="GitHub" target="_blank"><i class="fa fa-github fa-fw fa-3x"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/stewart.dulaney" data-toggle="tooltip" data-placement="bottom" title="Facebook" target="_blank"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/s_dulaney" data-toggle="tooltip" data-placement="bottom" title="Twitter" target="_blank"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
-                </li>
-                <li>
-                    <a href="mailto:stewart@stewartdulaney.com" data-toggle="tooltip" data-placement="bottom" title="Email" target="_blank"><i class="fa fa-envelope fa-fw fa-3x"></i></a>
-                </li>
-	        </ul>
-        </div>
-    </header>
-
-    <!-- Portfolio -->
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h2>Portfolio - Coming Soon</h2>
-                    <hr class="small">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.col-lg-10 -->
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <hr class="small">
-                    <p class="text-muted">Copyright &copy; Stewart Dulaney 2016</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/9aceadd75c.js"></script>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
+    <!-- Waypoints -->
+    <script src="js/jquery.waypoints.min.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<script>
+    $(document).ready(function(){
+ 
+        var off_set = '85%';
+
+        // hide our element on page load
+        $('#h1').css('opacity', 0);
+        var waypoint = new Waypoint({
+        element: document.getElementById('h1'),
+        handler: function(direction) {
+            if(direction == "down"){
+                $('#h1').removeClass('fadeOutLeftBig');
+                $('#h1').addClass('fadeInLeftBig');
+            }
+            else{
+                 $('#h1').removeClass('fadeInLeftBig');
+                 $('#h1').addClass('fadeOutLeftBig');
+            }
+        },
+        offset: off_set
+        })
+
+        // hide our element on page load
+        $('#h2').css('opacity', 0);
+        var waypoint = new Waypoint({
+        element: document.getElementById('h2'),
+        handler: function(direction) {
+            if(direction == "down"){
+                $('#h2').removeClass('fadeOutRightBig');
+                $('#h2').addClass('fadeInRightBig');
+            }
+            else{
+                 $('#h2').removeClass('fadeInRightBig');
+                 $('#h2').addClass('fadeOutRightBig');
+            }
+        },
+        offset: off_set
+        })
+
+        // hide our element on page load
+        $('#h3').css('opacity', 0);
+        var waypoint = new Waypoint({
+        element: document.getElementById('h3'),
+        handler: function(direction) {
+            if(direction == "down"){
+                $('#h3').removeClass('fadeOutLeftBig');
+                $('#h3').addClass('fadeInLeftBig');
+            }
+            else{
+                 $('#h3').removeClass('fadeInLeftBig');
+                 $('#h3').addClass('fadeOutLeftBig');
+            }
+        },
+        offset: off_set
+        })
+
+        // hide our element on page load
+        $('#h4').css('opacity', 0);
+        var waypoint = new Waypoint({
+        element: document.getElementById('h4'),
+        handler: function(direction) {
+            if(direction == "down"){
+                $('#h4').removeClass('fadeOutRightBig');
+                $('#h4').addClass('fadeInRightBig');
+            }
+            else{
+                 $('#h4').removeClass('fadeInRightBig');
+                 $('#h4').addClass('fadeOutRightBig');
+            }
+        },
+        offset: off_set
+        })
+
+        // hide our element on page load
+        $('#h5').css('opacity', 0);
+        var waypoint = new Waypoint({
+        element: document.getElementById('h5'),
+        handler: function(direction) {
+            if(direction == "down"){
+                $('#h5').removeClass('fadeOutLeftBig');
+                $('#h5').addClass('fadeInLeftBig');
+            }
+            else{
+                 $('#h5').removeClass('fadeInLeftBig');
+                 $('#h5').addClass('fadeOutLeftBig');
+            }
+        },
+        offset: off_set
+        })
+
+        // hide our element on page load
+        $('#h6').css('opacity', 0);
+        var waypoint = new Waypoint({
+        element: document.getElementById('h6'),
+        handler: function(direction) {
+            if(direction == "down"){
+                $('#h6').removeClass('fadeOutRightBig');
+                $('#h6').addClass('fadeInRightBig');
+            }
+            else{
+                 $('#h6').removeClass('fadeInRightBig');
+                 $('#h6').addClass('fadeOutRightBig');
+            }
+        },
+        offset: off_set
+        })
+
+        // hide our element on page load
+        $('#h7').css('opacity', 0);
+        var waypoint = new Waypoint({
+        element: document.getElementById('h7'),
+        handler: function(direction) {
+            if(direction == "down"){
+                $('#h7').removeClass('fadeOutLeftBig');
+                $('#h7').addClass('fadeInLeftBig');
+            }
+            else{
+                 $('#h7').removeClass('fadeInLeftBig');
+                 $('#h7').addClass('fadeOutLeftBig');
+            }
+        },
+        offset: off_set
+        })
+
+        var waypoint = new Waypoint({
+        element: document.getElementById('h8'),
+        handler: function(direction) {
+            if(direction == "down"){
+                $('#h8').removeClass('zoomOut');
+                $('#h8').addClass('zoomIn');
+            }
+            else{
+                 $('#h8').removeClass('zoomIn');
+                 $('#h8').addClass('zoomOut');
+            }
+        },
+        offset: off_set
+        })
+
+        var waypoint = new Waypoint({
+        element: document.getElementById('h9'),
+        handler: function(direction) {
+            if(direction == "down"){
+                $('#h9').removeClass('zoomOut');
+                $('#h9').addClass('zoomIn');
+            }
+            else{
+                 $('#h9').removeClass('zoomIn');
+                 $('#h9').addClass('zoomOut');
+            }
+        },
+        offset: off_set
+        })
+    })
+</script>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" style="color: #666666; font-weight: 400; font-style: normal; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="background: rgba(255, 255, 255, 0.90);">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top"><img src="img/32a5e0f4-4c16-48d6-9fbb-6359e6352584.png" style="max-width:100%; max-height:100%"></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#highlights"><strong>3827 Tilden Ave</strong></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#analysis"><strong>Property Details</strong></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#map"><strong>Location</strong></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#brochure"><strong>Photo Gallery</strong></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact"><strong>Contact</strong></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Full Page Image Background Carousel Header -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+            <li data-target="#myCarousel" data-slide-to="5"></li>
+            <li data-target="#myCarousel" data-slide-to="6"></li>
+            <li data-target="#myCarousel" data-slide-to="7"></li>
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/316077_tilden_010_r.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2></h2>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/316077_tilden_055_r.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2></h2>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/316077_tilden_082_r.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2></h2>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/316077_tilden_104.JPG');"></div>
+                <div class="carousel-caption">
+                    <h2></h2>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/316077_tilden_106.JPG');"></div>
+                <div class="carousel-caption">
+                    <h2></h2>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/316077_tilden_094.JPG');"></div>
+                <div class="carousel-caption">
+                    <h2></h2>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/316077_tilden_110.JPG');"></div>
+                <div class="carousel-caption">
+                    <h2></h2>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/316077_tilden_082_r.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2></h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+
+    </header>
+
+    <section id="highlights" class="highlights-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 style="font-size: 56px; color: #4b4949;">10 Units in Culver City</h1>
+                    <br>
+                    <div style="font-size: 18px;">
+                        <p id="h1" class="animated">Excellent location, close to downtown Culver City</p>
+                        <!-- <br> -->
+                        <p id="h2" class="animated">NO RENT CONTROL</p>
+                        <!-- <br> -->
+                        <p id="h3" class="animated">Great unit mix with 1 bedroom, 2 bedroom, & 3 bedroom units</p>
+                        <!-- <br> -->
+                        <p id="h4" class="animated">8 parking spaces</p>
+                        <!-- <br> -->
+                        <p id="h5" class="animated">Almost 20% upside in rents</p>
+                        <!-- <br> -->
+                        <p id="h6" class="animated">Approximately $300,000 in property upgrades over the past
+    36 months</p>
+                        <!-- <br> -->
+                        <p id="h7" class="animated">Zoned R4</p>
+                        <br>
+                        <!-- Button trigger modal -->
+                        <button id="h8" class="animated btn btn-primary btn-lg page-scroll" data-toggle="modal" data-target="#marketingPkg" style="font-size: 14px; line-height: 22px; padding: 14px 25px 14px 25px; background-color: #02baf2; text-align: center; border: none; vertical-align: middle; color: #FFFFFF;">
+                            <strong>Get the Marketing Package</strong>
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="marketingPkg" tabindex="-1" role="dialog" 
+                             aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <button type="button" class="close" 
+                                           data-dismiss="modal">
+                                               <span aria-hidden="true">&times;</span>
+                                               <span class="sr-only">Close</span>
+                                        </button>
+                                        <h4 class="modal-title" id="myModalLabel">
+                                            <strong>Marketing Package - 3827 Tilden Ave<strong>
+                                        </h4>
+                                    </div>
+                                    
+                                    <!-- Modal Body -->
+                                    <div class="modal-body">
+                                        
+                                        <form role="form">
+                                          <div class="form-group">
+                                            <label for="exampleInputEmail1">Email address</label>
+                                              <input type="email" class="form-control"
+                                              id="exampleInputEmail1" placeholder="Enter email"/>
+                                          </div>
+                                        </form>
+                                        
+                                        
+                                    </div>
+                                    
+                                    <!-- Modal Footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default"
+                                                data-dismiss="modal">
+                                                    Close
+                                        </button>
+                                        <button type="submit" class="btn btn-primary">
+                                            Email me the PDF
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <a id="h9" class="animated btn btn-default page-scroll" href="#analysis" style="border: none; opacity: 50; color: #666666; font-weight: 400;"><i class="fa fa-5x fa-angle-double-down"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="analysis" class="analysis-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Property Details Section</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="map" class="map-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Location Section</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="brochure" class="brochure-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Photo Gallery Section</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Contact Section</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <h1></h1>
+                <p></p>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Concord Real Estate Services 2016</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    
+
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-    <!-- JavaScript -->
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+
+
+    <!-- Script to Activate the Carousel -->
     <script>
-    // Closes the sidebar menu
-    $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-
-    // Opens the sidebar menu
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-
-    // Scrolls to the selected menu item on the page
-    $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-            }
-        });
-    });
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
     </script>
 
-    <!-- Initialize ToolTips -->
+    <!-- Loading animation -->
+    <!-- <button class="btn btn-lg btn-warning se-pre-con" data-loading-text=''><span class="glyphicon glyphicon-refresh glyphicon-refresh-animate"></span>Loading...</button>
+
     <script>
-   		$(function () { $("[data-toggle = 'tooltip']").tooltip(); });
-	</script>
+        $(window).load(function() {
+            // Animate loader off screen
+            $(".se-pre-con").fadeOut("fast");;
+        });
+    </script> -->
 
 </body>
 
