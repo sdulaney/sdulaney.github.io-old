@@ -1,3 +1,5 @@
+/*Add zoom feature Image Carousel*/
+
 .item {
     transition: display 1500ms linear 0s;
     overflow:hidden;
