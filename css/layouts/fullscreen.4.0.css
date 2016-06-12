@@ -1,0 +1,665 @@
+body {
+	background-image:none !important;
+	background-color:transparent !important;
+	margin:0;
+	padding:0;
+	height:100%;
+}
+
+h1 {
+	background-color:transparent;
+	color: #ffffff;
+	padding:0px;
+	margin:0px;
+	font-family:tahoma;
+	/*position:absolute;
+	top:0px; */
+	text-align:left;
+	font-size:24px;
+	font-weight:normal;
+	line-height:30px;
+	vertical-align:middle;
+}
+
+h3 {
+	font-size:26px !important;
+	background-color:transparent;
+	text-align:left !important;
+	font-weight:bold;
+	margin-top:0px !important;
+	margin-bottom:20px !important;
+	padding:0px !important;
+}
+
+h5 {
+	font-size:20px !important;
+	/*margin-top:20px;*/
+}
+
+
+
+div#bodyContainer
+{
+    height:auto;
+    min-height:auto;
+}
+
+/** HEADER **/
+div#headerContent
+{
+	z-index:100;
+    width:100%;
+    position: absolute;
+    top:0px;
+    left:0px;
+    text-align:center;
+}
+div#headerTitle
+{
+	background-color:transparent;
+	background-image:url(/_media/graphics/layouts/trans_top.png);
+	bacgkround-repeat:repeat-x;
+	height:80px;
+}
+div#headerTitle div.row
+{
+    width:980px;
+}
+div#headerTitle div.row1
+{
+    padding-top:40px;
+    padding-bottom:10px;
+    height:30px;
+}
+div#headerTitle div.row2
+{
+    padding-top:3px;
+    padding-bottom:3px;
+    height:74px;
+}
+div#headerTitle div.row2 img
+{
+	max-height:74px;
+}
+
+span.addr_block span.street, span.addr_block span.street1
+{
+    font-weight:bold;
+}
+span.addr_block span.csz
+{
+    font-size:16px;
+    padding-left:3px;
+}
+
+
+
+/** NAV LINKS **/
+div#headerNavigation
+{
+	background-color:#ffffff;
+	/*top:80px;*/
+    padding-top:2px;
+	color:black;
+	height:44px;
+	border-top:1px solid black;
+	border-bottom:1px solid black;
+	box-shadow:0px 5px 20px #090909;
+	font-family:Trebuchet MS,Verdana;
+	font-size:14px;
+	/*text-align:center;
+	height:40px;*/
+}
+
+div#headerNavigation div.row
+{
+    width:980px;
+    height:50px;
+}
+
+div#headerNavigation div.navLink, div#headerNavigation div.break{
+    color:#000000;
+	text-shadow:0 0px 0px #ffffff;
+	text-decoration:none;
+	display:inline-block;
+	padding:10px;
+	line-height:20px;
+	cursor:pointer;
+}
+div#headerNavigation div.navLink:hover{
+	/*color:#ffffff;
+	background:#F0B310;*/
+    text-shadow:0px 0px 2px gray;
+    /*box-shadow:0px 0px 3px #F0B310;*/
+    text-decoration:none;
+}
+
+div.nav_link_none, li.nav_link_none{
+    display: none !important;
+}
+
+/** NAV LINKS - MENU **/
+.menu {
+    display: inline-block;
+    margin: 0;
+    padding: 0 !important;
+    position: relative;
+    z-index: 999;
+}
+.menu ul li a, .menu ul li a:visited {
+    display: inline-block;
+    text-align: left;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu ul li {
+    display: block;
+    position: relative;
+}
+.menu ul li ul {
+    display: none;
+}
+.menu ul li:hover div {
+    background: none repeat scroll 0 0;
+    color: #fff;
+    width:150px;
+}
+.menu ul li:hover ul {
+    box-shadow: 0 2px 5px #e7e7e8;
+    display: block;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    background: none repeat scroll 0 0;
+}
+.menu ul li:hover ul li div.hide {
+    background: none repeat scroll 0 0 #666666;
+    color: #ffffff;
+}
+.menu ul li:hover ul li:hover div.hide {
+}
+.menu ul li:hover ul li ul {
+    display: none;
+}
+.menu ul li:hover ul li div {
+    background: none repeat scroll 0 0;
+    color: #000;
+    display: block;
+    margin-top: 2px;
+    text-transform: none;
+}
+.menu ul li:hover ul li div:hover {
+    background: none repeat scroll 0 0 #666666;
+    color: #ffffff;
+    width:150px;
+}
+
+
+div#bodyBackground
+{
+    position:fixed;
+    top:0px;
+	left:0px !important;
+	width:100%;
+	height:100%;
+	min-width:100% !important;
+	min-height:100% !important;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	opacity:.1;
+	z-index:-3;
+	display:none;
+}
+
+div#bodyContent {
+	min-height:100% !important;
+	top:0px;
+	width:980px;
+	padding-top:125px; /*160px*/
+	background:transparent;
+}
+
+div#bodyHome {
+	background:transparent;
+	position:relative;
+}
+
+div#factFinance iframe {
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 700px;
+    height: 500px;
+    background:transparent;
+}
+div#factSchools iframe {
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 650px;
+    background:transparent;
+}
+
+
+div#footerContent
+{
+	display:block;
+	float:left;
+	clear:both;
+	position:relative;
+	background-color:#e7e7e8;
+	width:100%;
+	left:50%;
+	margin-left:-50%;
+	top:0px;
+	z-index:4;
+	float:left;
+	margin-top:0px;
+}
+div#footerContent div.row
+{
+    width:980px;
+}
+
+/** MARQUEE **/
+div.listing_marquee{
+    line-height:30px;
+    vertical-align:middle;
+    height:30px;
+    padding:0px;
+    /*position:absolute;
+    top:0px;
+    left:50%; */
+    text-align:right;
+}
+
+div.listing_marquee span {
+    color: #ffffff;
+    display:inline-block;
+    float:none;
+    font-family:tahoma;
+    margin-top:0px !important;
+}
+
+
+div.listing_marquee span.price {
+    font-size:20px;
+}
+
+div.listing_marquee span.fact, div.listing_marquee span.modifier {
+    font-size:16px;
+}
+
+div.listing_marquee span.break {
+    font-size:16px;
+}
+
+
+
+/** BODY PANELS*/
+div#bodyFacts
+{
+    width:980px;
+}
+div.bodyFact
+{
+    width:700px;
+}
+div#panelHighlights
+{
+    display:block;
+    float:left;
+    width:250px;
+    padding-right:30px;
+}
+div#panelFacts
+{
+    display:block;
+    float:left;
+    width:700px;
+}
+div.open_houses div.open_house_title
+{
+    width:250px;
+}
+img.preview
+{
+    max-width:250px;
+    background-color: transparent;
+    border: 1px solid #e7e7e8;
+    display: inline-block !important;
+    margin: 0;
+    padding: 0 !important;
+}
+
+
+div.listing_box
+{
+    border:none !important;
+    margin-left:0px;
+    padding-left:0px;
+}
+.gallery li {
+    width:25%;
+}
+
+div.swipe_gallery
+{
+    padding-top: 0px;
+}
+
+/*QUICKLINKS TOOLBAR*/
+div.ql_toolbar
+{
+    background-color: gray;
+    border: 1px solid black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display:block;
+    float:right;
+    padding:right:150px;
+    height:30px;
+    padding: 5px;
+}
+a#ql_print {background-image:url(/_media/graphics/generic/quicklinks/print_4.png);}
+a#ql_email {background-image:url(/_media/graphics/generic/quicklinks/email_4.png);}
+a#ql_feedback {background-image:url(/_media/graphics/generic/quicklinks/feedback_4.png);}
+
+/*QuickLinks*/
+div.quicklinks
+{
+    display:block;
+    height:auto;
+    clear:both;
+    padding:10px 0px 10px 0px;
+    text-align:left;
+}
+div.quicklink_icon
+{
+    display:block;
+    float:left;
+    width:24px;
+    height:24px;
+    background-image:url(/_media/graphics/generic/quicklinks/link_icon.png);
+    background-position:center;
+}
+div.quicklinks div.quicklink
+{
+    padding:3px;
+}
+div.quicklinks div.quicklink_link
+{
+    padding-top:3px;
+}
+div.quicklinks div.quicklink_link a:link, div.quicklinks div.quicklink_link a:visited
+{
+    color:Black;
+    text-decoration:none;
+}
+div.quicklinks div.quicklink_link a:hover, div.quicklinks div.cb_iframe:hover,  div.quicklinks div.contentLoader:hover
+{
+    cursor:pointer;
+    text-decoration:underline;
+}
+
+
+/* HIGHLIGHTS */
+div#listing_highlights {
+    font-size:16px;
+    font-family:Trebuchet MS,Verdana;
+    border:none !important;
+    width:220px;
+}
+div#listing_highlights div.highlight{
+    padding:2px 0px 2px 0px;
+    clear:both;
+}
+div.highlight_alt
+{
+    background-color:none;
+}
+div#listing_highlights span.attrname {
+    display:block;
+    float:left;
+    width:60px;
+    text-align:right;
+}
+div#listing_highlights span.attrbreak {
+    display:block;
+    float:left;
+    width:10px;
+    text-align:center;
+}
+div#listing_highlights span.attrval {
+    font-weight:700;
+    text-align:left;
+    display:block;
+    float:left;
+    width:150px;
+}
+
+
+div.splitscreen
+{
+    background: url(/_media/graphics/backgrounds/gradient.jpg) repeat-x center;
+    height: 10px;
+    width: 100%;
+    margin:0px;
+    vertical-align:middle;
+}
+
+/**DESIGNATIONS **/
+div.designations
+{
+    /*background-color: white;
+    box-shadow: 0 5px 10px black;*/
+    height: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+    width: 100%;
+    margin:0px;
+    vertical-align:middle;
+}
+div.designations img {
+    padding:0px 10px 0px 10px;
+    max-height:40px;
+}
+
+/** DISCLAIMER **/
+div.disclaimer
+{
+    width:980px;
+    clear:both;
+}
+
+
+div.open_houses
+{
+    background:none;
+}
+div.footer_item:before
+{
+    background:none !important;
+}
+
+/** LISTING CARD **/
+div#card
+{
+	margin-top:20px;
+	width:980px;
+	border: 0px;
+	text-align:center;
+	font-family: Tahoma;
+	clear:both;
+	height:auto;
+	overflow:auto;
+}
+div#card div.contact
+{
+	width:980px;
+	clear:both;
+	height:auto;
+	margin-bottom: 10px;
+	display:block;
+	float:left;
+}
+
+/** CARD PANELS - {Media, Details, Office} **/
+/**  PANEL - Media */
+div.contact div.media
+{
+	width:160px;
+	display:block;
+	float:left;
+	padding-right:10px;
+}
+div.media img.agent
+{
+	max-width:160px;
+}
+
+/**  PANEL - Details */
+div.contact div.details
+{
+	width:330px;
+	display:block;
+	float:left;
+	min-height:100px;
+}
+div.details h4
+{
+    padding:0px;
+}
+div.details div.phone
+{
+	font-size:12px;
+	margin:0px;
+	font-family:Tahoma;
+	padding-top:3px;
+	display:block;
+	float:left;
+	clear:both;
+}
+div.details div.phone_label
+{
+	font-size:12px;
+	margin:0px;
+	font-family:Tahoma;
+	padding-top:3px;
+	padding-left:5px;
+	display:block;
+	float:left;
+	clear:right;
+}
+div.details div.title
+{
+	font-size:12px;
+	margin:0px;
+	font-family:Tahoma;
+	padding-top:3px;
+	text-align:left;
+}
+
+/**  Card Actions **/
+div.card_actions
+{
+    /*display:block;
+    width:100%;
+    height:50px; */
+    float:left;
+    text-align: left;
+    clear:both;
+    margin-top:10px;
+    height:auto;
+}
+div.card_actions div.row
+{
+    width:auto !important;
+}
+
+div.card_actions a.card_action
+{
+    display:block;
+    float:left;
+    border: none;
+    padding:8px;
+    margin-right: 5px;
+    font-family:Tahoma;
+    font-size:13px;
+    height:19px;
+    text-decoration:none;
+    border-radius:3px;
+}
+div.card_actions a.card_action:hover {
+    text-decoration:none;
+}
+
+div.card_actions a.agent_form_link
+{
+    display:block;
+    float:left;
+    width:170px;
+}
+
+/**  PANEL - Office */
+div.contact div.office
+{
+	width:470px;
+	display:block;
+	float:right;
+	min-height:100px;
+}
+
+div.office div.office_info
+{
+	width:300px;
+	display:block;
+	float:left;
+	padding-right:8px;
+	text-align:right;
+}
+div.office div.right_border
+{
+    border-right:solid 2px #000000;
+}
+
+div.office_info h4
+{
+    padding:0px;
+    text-align:right;
+}
+div.office_info p, div.office_info div.phone
+{
+    text-align: right;
+    font-size: 12px;
+    font-family: Tahoma;
+}
+div.office_info div.phone
+{
+    font-weight:bold;
+}
+
+div.office div.logo
+{
+	width:160px;
+	display:block;
+	float:right;
+	min-height:100px;
+}
+div.logo img.logo
+{
+	max-width:160px;
+	padding:0px;
+}
+
+div.link_break
+{
+    background:url('/_media/graphics/generic/listings/divider1.png') no-repeat center;
+    height:20px;
+}

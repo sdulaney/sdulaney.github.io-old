@@ -1,0 +1,869 @@
+html,body,form {
+    height:100%;
+    margin:0;
+    padding:0;
+}
+
+body {
+    margin:8px 0 0;
+    font-size:14px;
+    font-family:"Trebuchet MS",Verdana;
+    text-align:center;
+}
+
+img {
+    border:none;
+}
+
+a:link, a:visited {
+    text-decoration:none;
+    /*color:#000;*/
+    outline: 0;
+}
+
+a:hover {
+    text-decoration:underline;
+    cursor:pointer;
+}
+
+p {
+    font-size:14px;
+    font-family:Verdana;
+    text-align:left;
+}
+
+h1 {
+    font-family:"Trebuchet MS";
+    font-size:18px;
+    margin:0;
+    padding:10px;
+    text-align:center;
+}
+
+h2 {
+    font-family:"Trebuchet MS";
+    font-size:18px;
+    margin:0;
+    padding-top:0;
+    margin-left:10px;
+    text-align:left;
+    font-weight:700;
+}
+
+h3 {
+    font-family:"Trebuchet MS";
+    font-size:18px;
+    margin:10px 0 0;
+    padding:5px;
+    text-align:center
+}
+
+h4 {
+    font-size:14px;
+    font-family:"Trebuchet MS";
+    margin:0;
+    padding:5px;
+    text-align:left
+}
+
+h5 {
+    font-size:16px;
+    font-family:"Trebuchet MS";
+    margin:0;
+    padding:5px 5px 5px 0;
+    text-align:left
+}
+
+
+/*Custom Classes*/
+img.header {
+    max-width:800px
+}
+
+a.agent_link:link,a.agent_link:visited {
+    border-color:#fff;
+    border-style:solid;
+    border-width:1px;
+    display:block;
+    font-family:Verdana;
+    font-size:13px;
+    height:19px;
+    padding:2px 0;
+    text-align:center;
+    text-decoration:none;
+    width:148px
+}
+
+a.agent_link:hover {
+    cursor:pointer;
+    text-decoration:none
+}
+
+h2.price {
+    display:block;
+    float:left;
+    font-size:24px
+}
+
+h2.agent {
+}
+
+h2.result {
+    height:25px;
+    vertical-align:middle;
+    font-weight:400;
+    font-size:15px;
+    font-family:"Trebuchet MS";
+    margin:0;
+    padding:5px 0 0 5px;
+    text-align:left;
+    clear:none
+}
+
+h3.result {
+    height:25px;
+    vertical-align:middle;
+    font-weight:700;
+    font-size:15px;
+    font-family:"Trebuchet MS";
+    margin:0;
+    padding:5px 0 0 5px;
+    text-align:center
+}
+
+div#bodyContainer {
+    min-height:100%;
+    text-align:center
+}
+
+div#bodyContent {
+    width:800px;
+    background-color:#fff;
+    margin-left:auto;
+    margin-right:auto
+}
+
+div#footerContent {
+    clear:both
+}
+
+div#listing_content {
+    text-align:left
+}
+
+div.box {
+    display:block;
+    float:left;
+    height:auto;
+}
+
+div#panelAgent {
+    text-align:center;
+    height:auto
+}
+
+
+
+
+
+div fieldset,fieldset {
+    border-width:1px;
+    border-style:solid;
+    margin-top:10px;
+    padding:5px 10px 10px;
+    position:relative;
+    -moz-border-radius:10px;
+    -khtml-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px
+}
+
+div legend,fieldset legend {
+    font-family:"Trebuchet MS";
+    font-size:14px;
+    font-weight:700
+}
+
+div.paging {
+    padding:3px 0 0;
+    clear:both;
+    font-family:"Trebuchet MS";
+    font-size:14px;
+    height:20px;
+    margin-top:5px;
+    margin-bottom:5px
+}
+
+a.paging:link,a.paging:visited {
+    text-align:center;
+    padding-left:0;
+    padding-right:0;
+    font-family:"Trebuchet MS";
+    text-decoration:none
+}
+
+a.paging:hover {
+    text-decoration:underline;
+    cursor:pointer
+}
+
+div.result_row {
+    padding:0;
+    clear:both;
+    min-height:135px;
+    margin-top:4px;
+    margin-bottom:4px
+}
+
+span.result_caption {
+    font-family:"Trebuchet MS";
+    font-size:12px;
+    text-align:left;
+    padding-left:3px;
+    display:inline-block
+}
+
+
+
+.control_lead_capture {
+    border-width:1px;
+    border-style:solid
+}
+
+div.open_houses {
+    margin-top:15px;
+    background-color:#FFF;
+    color:#000;
+    clear:both;
+    font-family:"Trebuchet MS";
+    font-size:14px;
+    text-align:center;
+    width:100%
+}
+
+div.open_houses div.open_house_title {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image:url(http://www.listingserver.com/_media/graphics/generic/openhouse/openhouse_gold.png);
+    width:120px;
+    height:57px
+}
+
+div.open_houses div.open_house {
+    padding-bottom:10px
+}
+
+div.open_house span.title {
+    color:red;
+    text-transform:uppercase;
+    display:block
+}
+
+div.open_house span.entry {
+    display:block;
+    padding-top:3px;
+    font-size:12px;
+    font-weight:700
+}
+
+div.open_house span.entrytime {
+    display:block;
+    padding-top:3px;
+    font-size:12px
+}
+
+img.header {
+    max-width:800px
+}
+
+/** **/
+/** **/
+/** **/
+/** **/
+/*DEFAULTS*/
+span.label {
+    color:#000;
+    display:inline-block;
+    font-family:"Trebuchet MS";
+    font-size:14px;
+    padding-right:3px;
+    text-align:right;
+    vertical-align:top
+}
+
+div.disclaimer {
+    font-size:10px;
+    text-align:left;
+    padding:20px 10px 10px;
+    text-align:justify;
+}
+div.disclaimer span.license{
+    font-size:10px;
+    text-align:left;
+}
+div.disclaimer span.break{
+    font-size:10px;
+    text-align:left;
+    padding-left:5px;
+    padding-right:5px;
+}
+div.disclaimer a:link, a:visited {
+    text-decoration:none;
+    color:#000;
+}
+
+/*QUICKLINKS TOOLBAR*/
+div.ql_toolbar {
+    background-color:#fff
+}
+a.ql_tool, a.ql_tool_iframe {
+    display:block;
+    float:left;
+    width:40px;
+    height:30px;
+    background-repeat:no-repeat;
+    background-position:center;
+    text-decoration:none;
+}
+a.ql_tool:hover, a.ql_tool_iframe:hover {
+    text-decoration:none;
+}
+
+/*a#ql_email{display:none;}*/
+
+
+
+.listing_links {
+/*padding:5px 5px 5px 5px;*/
+    padding-top:5px;
+    margin:0;
+    border:none;
+    clear:both
+}
+
+a.listing_links {
+    padding-top:0
+}
+
+a.listing_links img {
+    padding-top:5px
+}
+
+div.agent_links {
+    text-align:center;
+    padding-top:10px
+}
+
+a.agent_form_link {
+    display:block;
+    clear:both;
+    margin:5px 0
+}
+
+a.agent_form_link div {
+    height:52px
+}
+
+div.agent_form_link_info {
+    background:url(http://www.listingserver.com/_media/graphics/buttons/listing_more_info.png) no-repeat center
+}
+
+div.agent_form_link_updates {
+    background:url(http://www.listingserver.com/_media/graphics/buttons/listing_updates.png) no-repeat center
+}
+
+div.office {
+    text-align:center;
+    margin-top:10px
+}
+
+div.office p {
+    text-align:center;
+    font-size:12px;
+    font-family:"Trebuchet MS";
+    margin-top:3px;
+    margin-bottom:3px
+}
+
+div#panelAgent {
+    margin-top:5px;
+    width:150px;
+    border:0;
+    background-color:#FFF;
+    text-align:center;
+    font-family:'Trebuchet MS',Verdana
+}
+
+div#panelAgent img.agent,div.office img.logo {
+    border:0;
+    padding-top:10px
+}
+
+div#panelAgent h2 {
+    font-size:16px;
+    text-align:center;
+    padding-top:1px;
+    padding-bottom:1px
+}
+
+div#panelAgent h4 {
+    font-size:14px;
+    text-align:center;
+    padding:3px 0 0
+}
+
+div#panelAgent h2.office {
+    color:#000
+}
+
+div#panelAgent h4.office {
+    padding-top:0;
+    color:#000
+}
+
+div#panelAgent h5 {
+    font-size:10px;
+    text-align:center;
+    margin:0
+}
+
+div#panelAgent div.phone {
+    font-size:12px;
+    text-align:center;
+    margin:0;
+    font-family:Verdana;
+    font-weight:700;
+    padding-top:3px
+}
+
+div#panelAgent div.phone_label {
+    font-size:10px;
+    text-align:center;
+    margin:0;
+    font-family:Verdana
+}
+
+div#panelAgent div.agent_title {
+    font-size:12px;
+    text-align:center;
+    margin:0;
+    font-family:Verdana;
+    padding-top:3px
+}
+
+
+
+/** **/
+/** **/
+/** **/
+div.row {
+    padding:0;
+    clear:both;
+    text-align:left;
+    height:auto
+}
+
+/*li.feature {
+    list-style-type:none;
+    padding:0;
+    margin:0 0 3px
+}
+
+li.feature:before {
+    content:"\00BB";
+    margin:0;
+    padding:0 5px 5px 10px;
+    color:#000;
+    font-size:12px;
+    font-weight:700
+}*/
+
+/** FEATURES **/
+ul.features
+{
+    padding-left:5px;
+}
+li.feature {
+    list-style-type:none;
+    background-image: url("/_media/graphics/layouts/check-box.png");
+    background-repeat: no-repeat;
+    font-size: 16px;
+    line-height: 160%;
+    padding-left: 25px;
+}
+
+label.error {
+    width:250px;
+    margin-left:10px;
+    color:Red
+}
+
+div.raterow {
+    margin:10px;
+    padding:0 20px 10px;
+    clear:both;
+    text-align:right;
+    -moz-border-radius:10px;
+    -khtml-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    border:solid 1px #555
+}
+
+div.raterow h1 {
+    font-family:Trebuchet MS,Verdana;
+    color:#000;
+    /*background-color:#FFF;*/
+    text-align:left
+}
+
+table.rates {
+/*display: block; float:left;*/
+    text-align:center
+}
+
+table.rates tr {
+    vertical-align:top;
+    font-size:14px;
+    font-family:Trebuchet MS,Verdana
+}
+
+table.rates td.lbl {
+    text-align:right;
+    padding-left:8px;
+    padding-right:3px;
+    padding-top:2px;
+    font-size:12px;
+}
+
+table.rates td.currency {
+    text-align:right;
+    font-weight:700
+}
+
+table.ratescalc tr {
+    vertical-align:top
+}
+
+table.ratescalc td {
+    text-align:center;
+    padding-left:10px;
+    padding-top:10px
+}
+
+div.ratebox {
+/*float:left;
+	clear:right;*/
+    background-color:#EFEFEF;
+    border:solid 1px #555;
+    padding:5px;
+    text-align:center;
+/*cursor:pointer;*/
+    height:75px;
+    width:110px;
+    -moz-border-radius:10px;
+    -khtml-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    font-size:12px;
+    font-family:Trebuchet MS,Verdana
+}
+
+div.ratebox span.currency {
+    font-weight:700;
+    font-size:14px
+}
+
+div.raterow p {
+    font-size:10px;
+    clear:both;
+    margin:2px 0
+}
+
+img.rateinfo {
+    margin-top:5px;
+    max-width:100px
+}
+
+span.rate {
+}
+
+span.apr {
+    font-size:smaller
+}
+
+div#listing_finance div.row {
+    padding-top:3px
+}
+
+a.social_badges img {
+    margin:3px 3px 0
+}
+
+/* Listings */
+div.listing_box {
+    margin:10px;
+    padding:0 20px 10px;
+/*margin-top: 15px;
+    padding: 0 10px 10px;*/
+    text-align:left
+}
+
+/* Marquee */
+div.listing_marquee {
+    font-family:"Trebuchet MS";
+    padding-top:5px;
+    height:36px
+}
+
+div.listing_marquee div.box {
+    display:block;
+    height:30px
+}
+
+div.listing_marquee span {
+    display:block;
+    float:left;
+    font-size:14px
+}
+
+div.listing_marquee span.fact, div.listing_marquee span.price {
+    font-weight:700;
+    font-size:16px;
+    margin:6px 0 0
+}
+
+div.listing_marquee span.modifier {
+    margin:8px 0 0 5px
+}
+
+div.listing_marquee span.break {
+    margin:8px 8px 0
+}
+
+
+
+/* GALLERY */
+div.swipe_gallery {
+    text-align:left;
+    padding-top:5px
+}
+
+div.swipe_gallery p {
+    font-size:12px;
+    font-style:italic;
+    margin:0;
+    padding:0
+}
+
+.gallery {
+    list-style:none outside none;
+    margin:0;
+    padding:0
+}
+
+.gallery:after {
+    clear:both;
+    content:".";
+    display:block;
+    height:0;
+    visibility:hidden
+}
+
+.gallery li {
+    float:left;
+    width:33.3333%;
+    display:inline
+}
+
+.gallery li a {
+    display:block;
+    margin:5px;
+    text-align:center
+}
+
+.gallery li img {
+    text-align:center;
+    display:block;
+    height:auto;
+    width:100%;
+    max-height:120px;
+    max-width:150px
+}
+
+#galleryMain .ui-content {
+    overflow:hidden
+}
+
+div.gallery_item {
+    text-align:center
+}
+
+input.calcfields,span.calcfields {
+    text-align:right;
+    font-family:Consolas;
+    width:85px
+}
+
+span.calcfields {
+    display:inline-block
+}
+
+/* MAP STYLES => Popup */
+img.map_tn {
+    max-height:75px;
+    max-width:75px;
+    display:block;
+    float:left
+}
+
+div.map_info {
+    display:block;
+    float:left;
+    margin-left:10px;
+    max-width:175px
+}
+
+/* MAP STYLES => Override VE Defaults for VE_Pushpin_Popup_ */
+.ero .ero-body {
+    width:300px;
+    border:solid 2px #333
+}
+
+/* FORMS */
+div.box_form_header {
+    border:solid 1px #C8C8C8;
+    height:auto;
+    width:598px
+}
+
+div.box_form_header h1 {
+    font-size:16px;
+    width:100%;
+    background-color:#C8C8C8;
+    padding-left:10px;
+    width:578px;
+    text-align:left
+}
+
+div.box_form_header img {
+    max-width:125px;
+    max-height:125px;
+    display:block;
+    float:left;
+    padding:5px
+}
+
+div.box_form_header div.box {
+    width:175px;
+    display:block;
+    float:left;
+    padding:5px
+}
+
+div.box_form_header div.phone_label {
+    padding-left:3px;
+    font-size:smaller
+}
+
+/** SEO FOOTER **/
+div.seo_footer
+{
+	border:solid #ffffff 2px;
+	padding:20px;
+	margin:25px;
+	background-color:#f6f6f6;
+    -moz-border-radius:10px;
+    -khtml-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    clear:both;
+}
+div.seo_footer span.seo_highlight
+{
+    font-weight:bold;
+}
+div.seo_footer span.seo_link
+{
+    text-decoration:underline;
+}
+div.seo_footer span.seo_link a
+{
+	color:black;
+    text-decoration:none;
+}
+div.seo_footer span.seo_link a:hover
+{
+    text-decoration:none;
+}
+
+/** PORCH FOOTEr **/
+div.porch_footer
+{
+	border:solid #ffffff 2px;
+	padding:20px;
+	margin:25px;
+	background-color:#f6f6f6;
+    -moz-border-radius:10px;
+    -khtml-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    clear:both;
+    /*text-align:justify;*/
+}
+div.porch_footer a
+{
+    font-weight:bold;
+	color:black;
+    text-decoration:none;
+}
+div.porch_footer a:hover
+{
+    text-decoration:underline;
+}
+
+/** PORCH MISC **/
+h5 span.porch
+{
+    font-size:16px;
+    display:inline-block;
+    padding-top:2px;
+}
+h5 span.porch:before
+{
+    content:"|";
+    color:black;
+    font-size:18px;
+    padding:0px 10px 0px 10px;
+}
+h5 span.porch a
+{
+    color:inherit;
+}
+a.porch
+{
+    color:inherit;
+    font-size:inherit;
+}
+
+/** SPONSOR ADS **/
+div.ads_sidebar, div.ads_sidebar p
+{
+    width:100% !important;
+    text-align:center;
+}
+div.ads_footer
+{
+    width:100%;
+    text-align:center;
+}
+
+div.music, div#slideshow_mp3
+{
+    left:-5000px;
+}
+
+div.bio h2, div.bio p
+{
+    margin:10px;
+}
